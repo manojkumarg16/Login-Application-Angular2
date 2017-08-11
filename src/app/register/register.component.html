@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+<body>
+
+  <div class="container">
+  <form #formCtrl="ngForm">
+    <div class="input">
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 input-field1">
+        <label for="username">Name : </label>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 ">
+        <input type="text" id="username" name="username" [(ngModel)]="data.username" #username="ngModel" required> 
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 input-field1">
+        <label for="pwd">Password  : </label>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+        <input type="password" id="pwd" name="password" [(ngModel)]="data.password" #password="ngModel" required>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 input-field1">
+        <label for="email">Email : </label>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 ">
+        <input type="email" id="email" name="email" [(ngModel)]="data.email" #email="ngModel" required> 
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 input-field1">
+        <label for="mob">mob.no : </label>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 ">
+        <input type="text" id="mob" name="mob" [(ngModel)]="data.mob" #mob="ngModel" required> 
+      </div>
+    </div>
+    <div class="row">
+      <button [disabled]="!formCtrl.form.valid" id="Save" class="btn btn-primary" (click)="register()" >Save</button>
+      <button id="Cancel" class="btn btn-primary" (click)="cancel()" >cancel</button>
+    </div>
+    </form>
+    </div>
+</body>
+</html>

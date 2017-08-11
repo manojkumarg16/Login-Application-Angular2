@@ -1,0 +1,30 @@
+.container{
+  width:950px;
+  margin : 0 auto ;
+}
+.input{
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+label{
+  margin-left: 320px;
+}
+input{
+  border-radius: 5px 5px 5px 5px;
+  height:40px;
+  border-style: inset;
+  float:left;
+}
+.row{
+  margin-top: 10px;
+}
+.input-field1{
+  margin-top: 10px;
+  float: initial;
+}
+#login{
+   margin-top: 30px;
+    margin-left: 415px;
+    width: 100px;
+}

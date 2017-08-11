@@ -1,0 +1,32 @@
+#page-navigator {
+  margin-top: 0px;
+}
+
+.nav > li > a {
+  height: 70px;
+  color: black;
+  font-size: 25px;
+  font-weight: lighter;
+  text-align: center;
+  display: inline;
+}
+ul{
+  height: 70px;
+}
+
+.nav-pills > li.active > a,
+.nav > li > a:focus,
+.nav > li:hover,
+.nav > li.active > a:focus {
+  background-color: rgba(255,255,0,0.8);
+}
+
+.nav > li {
+    width: 33.2%;
+    border-spacing: 10px;
+    background: darkgray;
+    height: 70px;
+    float: left;  
+    list-style-type: none;
+    text-align: center;
+}
